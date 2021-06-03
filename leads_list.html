@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, Ample lite admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, ASV Infotechs lite dashboard bootstrap 5 dashboard template">
+    <meta name="description"
+        content="ASV Infotechs Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="robots" content="noindex,nofollow">
+    <title>ASV Infotechs Lite Template by WrapPixel</title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/ample-admin-lite/" />
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
+    <!-- Custom CSS -->
+   <link href="css/style.min.css" rel="stylesheet">  
+   <link href="css/table/table.css" rel="stylesheet">
+
+
+   <style>
+       
+       body {
+  font-family: Arial, sans-serif;
+  background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06D85F;
+  margin: 80px 0;
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+   </style>
+
+
+
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin5">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <div class="navbar-header" data-logobg="skin6">
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <a class="navbar-brand" href="dashboard.html">
+                        <!-- Logo icon -->
+                        <b class="logo-icon">
+                            <!-- Dark Logo icon -->
+                            <img src="plugins/images/logo-icon.png" alt="homepage" />
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text -->
+                        <span class="logo-text">
+                            <!-- dark Logo text -->
+                            <img src="plugins/images/logo-text.png" alt="homepage" />
+                        </span>
+                    </a>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <a class="nav-toggler waves-effect waves-light text-dark d-block d-md-none"
+                        href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+                    <ul class="navbar-nav d-none d-md-block d-lg-none">
+                        <li class="nav-item">
+                            <a class="nav-toggler nav-link waves-effect waves-light text-white"
+                                href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                        </li>
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- Right side toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav ms-auto d-flex align-items-center">
+
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class=" in">
+                            <form role="search" class="app-search d-none d-md-block me-3">
+                                <input type="text" placeholder="Search..." class="form-control mt-0">
+                                <a href="" class="active">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </form>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li>
+                            <a class="profile-pic" href="#">
+                                <img src="plugins/images/users/varun.jpg" alt="user-img" width="36"
+                                    class="img-circle"><span class="text-white font-medium">Sathish</span></a>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <!-- User Profile-->
+                        <li class="sidebar-item pt-2">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="dashboard.html"
+                                aria-expanded="false">
+                                <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
+                                <span class="hide-menu">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item pt-2">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="leads_list.html"
+                                aria-expanded="false">
+                                <i class="fas fa-users" aria-hidden="true"></i>
+                                <span class="hide-menu">Leads</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item pt-2">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="customer_list.html"
+                                aria-expanded="false">
+                                <i class="fas fa-address-book" aria-hidden="true"></i>
+                                <span class="hide-menu">Customers</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item pt-2">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Campaign_list.html"
+                                aria-expanded="false">
+                                <i class=" fas fa-microphone" aria-hidden="true"></i>
+                                <span class="hide-menu">Campaign</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item pt-2">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Bill_list.html"
+                                aria-expanded="false">
+                                <i class="fas fa-clipboard-list" aria-hidden="true"></i>
+                                <span class="hide-menu">Bill</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item pt-2">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Receipt_list.html"
+                                aria-expanded="false">
+                                <i class=" fas fa-clipboard-check" aria-hidden="true"></i>
+                                <span class="hide-menu">Receipts</span>
+                            </a>
+                        </li><li class="sidebar-item pt-2">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="User_Management.html"
+                                aria-expanded="false">
+                                <i class="fas fa-cog" aria-hidden="true"></i>
+                                <span class="hide-menu">settings</span>
+                            </a>
+                        </li>
+                      
+                    </ul>
+
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="white-box">
+                          <div class="col-md-12 row">  
+                                <input type="text" placeholder="Search..." class="form-control mt-0" style="width: 120px;margin-left:937px;">
+                                <button style="width: 100px;margin-left:22px;" class="text-center upgrade-btn btn d-grid btn-success text-white">                           
+                                    Add Lead
+                              </button>                             
+                            </div><br>
+                            <h3>Lead Details</h3>
+                            
+                           
+
+
+                            <div class="table-responsive col-md-12">
+
+
+                                <table class="table text-nowrap" id="tableData">
+                                    <thead>
+                                        <tr style="background-color: grey;">
+                                            <th class="border-top-0" style="color:white">#</th>
+                                            <th class="border-top-0" style="color:white">Name</th>
+                                            <th class="border-top-0" style="color:white">Email</th>
+                                            <th class="border-top-0" style="color:white">Phone no</th>
+                                            <th class="border-top-0" style="color:white">Location</th>
+                                            <th class="border-top-0" style="color:white">Prefered product</th>
+                                            <th class="border-top-0" style="color:white">Executive Name</th>
+                                            <th class="border-top-0" style="color:white">Follow-up Date</th>
+                                            <th class="border-top-0" style="color:white">Campaign</th>
+                                            <th class="border-top-0" style="color:white">Edit</th>
+                                            <th class="border-top-0" style="color:white">Follow-up</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Deshmukh</td>
+                                            <td>Prohaska</td>
+                                            <td>9786784567</td>
+                                            <td>Chennai</td>
+                                            <td>BSR lands</td>
+                                            <td>Angai</td>
+                                            <td>07-06-2021</td>
+                                            <td>mail</td>
+                                            <td><i class="fa fa-edit" aria-hidden="true"></i></td>
+                                          <td><i class="fas fa-phone-square" aria-hidden="true" href = "Follow-up.html"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Deshmukh</td>
+                                            <td>Gaylord</td>
+                                            <td>9786784567</td>
+                                            <td>Chennai</td>
+                                            <td>BSR lands</td>
+                                            <td>Kanni</td>
+                                            <td>07-06-2021</td>
+                                            <td>Facebook</td>
+                                            <td><i class="fa fa-edit" aria-hidden="true"></i></td>
+                                          <td><i class="fas fa-phone-square" aria-hidden="true"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Sanghani</td>
+                                            <td>Gusikowski</td>
+                                            <td>9786784567</td>
+                                            <td>Chennai</td>
+                                            <td>BSR lands</td>
+                                            <td>Divya</td>
+                                            <td>07-06-2021</td>
+                                            <td>instagram</td>
+                                            <td><i class="fa fa-edit" aria-hidden="true"></i></td>
+                                          <td><i class="fas fa-phone-square" aria-hidden="true"></i></td>
+                                          
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Roshan</td>
+                                            <td>Rogahn</td>
+                                            <td>9786784567</td>
+                                            <td>Chennai</td>
+                                            <td>BSR lands</td>
+                                            <td>Papa</td>
+                                            <td>07-06-2021</td>     
+                                            <td>SMS</td>                         <td><i class="fa fa-edit" aria-hidden="true"></i></td>
+                                          <td><i class="fas fa-phone-square" aria-hidden="true"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Roshan</td>
+                                            <td>Rogahn</td>
+                                            <td>9786784567</td>
+                                            <td>Chennai</td>
+                                            <td>BSR lands</td>
+                                            <td>Papa</td>
+                                            <td>07-06-2021</td>     
+                                            <td>SMS</td>                        
+                                             <td><i class="fa fa-edit" aria-hidden="true"></i></td>
+                                          <td>  	<a class="button" href="#popup1">Let me Pop up</a>
+                                          
+                                              <i class="fas fa-phone-square"  aria-hidden="true"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Roshan</td>
+                                            <td>Rogahn</td>
+                                            <td>9786784567</td>
+                                            <td>Chennai</td>
+                                            <td>BSR lands</td>
+                                            <td>Papa</td>
+                                            <td>07-06-2021</td>     
+                                            <td>SMS</td>                         <td><i class="fa fa-edit" aria-hidden="true"></i></td>
+                                          <td><i class="fas fa-phone-square" aria-hidden="true"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Roshan</td>
+                                            <td>Rogahn</td>
+                                            <td>9786784567</td>
+                                            <td>Chennai</td>
+                                            <td>BSR lands</td>
+                                            <td>Papa</td>
+                                            <td>07-06-2021</td>     
+                                            <td>SMS</td>                         <td><i class="fa fa-edit" aria-hidden="true"></i></td>
+                                          <td><i class="fas fa-phone-square" aria-hidden="true"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>Roshan</td>
+                                            <td>Rogahn</td>
+                                            <td>9786784567</td>
+                                            <td>Chennai</td>
+                                            <td>BSR lands</td>
+                                            <td>Papa</td>
+                                            <td>07-06-2021</td>     
+                                            <td>SMS</td>                         <td><i class="fa fa-edit" aria-hidden="true"></i></td>
+                                          <td><i class="fas fa-phone-square" aria-hidden="true"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Roshan</td>
+                                            <td>Rogahn</td>
+                                            <td>9786784567</td>
+                                            <td>Chennai</td>
+                                            <td>BSR lands</td>
+                                            <td>Papa</td>
+                                            <td>07-06-2021</td>     
+                                            <td>SMS</td>                         <td><i class="fa fa-edit" aria-hidden="true"></i></td>
+                                          <td><i class="fas fa-phone-square" aria-hidden="true"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>Roshan</td>
+                                            <td>Rogahn</td>
+                                            <td>9786784567</td>
+                                            <td>Chennai</td>
+                                            <td>BSR lands</td>
+                                            <td>Papa</td>
+                                            <td>07-06-2021</td>     
+                                            <td>SMS</td>                         <td><i class="fa fa-edit" aria-hidden="true"></i></td>
+                                          <td><i class="fas fa-phone-square" aria-hidden="true"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>Roshan</td>
+                                            <td>Rogahn</td>
+                                            <td>9786784567</td>
+                                            <td>Chennai</td>
+                                            <td>BSR lands</td>
+                                            <td>Papa</td>
+                                            <td>07-06-2021</td>     
+                                            <td>SMS</td>                         <td><i class="fa fa-edit" aria-hidden="true"></i></td>
+                                          <td><i class="fas fa-phone-square" aria-hidden="true"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>Roshan</td>
+                                            <td>Rogahn</td>
+                                            <td>9786784567</td>
+                                            <td>Chennai</td>
+                                            <td>BSR lands</td>
+                                            <td>Papa</td>
+                                            <td>07-06-2021</td>     
+                                            <td>SMS</td>                         <td><i class="fa fa-edit" aria-hidden="true"></i></td>
+                                          <td><i class="fas fa-phone-square" aria-hidden="true"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>Roshan</td>
+                                            <td>Rogahn</td>
+                                            <td>9786784567</td>
+                                            <td>Chennai</td>
+                                            <td>BSR lands</td>
+                                            <td>Papa</td>
+                                            <td>07-06-2021</td>     
+                                            <td>SMS</td>                         <td><i class="fa fa-edit" aria-hidden="true"></i></td>
+                                          <td><i class="fas fa-phone-square" aria-hidden="true"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>Roshan</td>
+                                            <td>Rogahn</td>
+                                            <td>9786784567</td>
+                                            <td>Chennai</td>
+                                            <td>BSR lands</td>
+                                            <td>Papa</td>
+                                            <td>07-06-2021</td>     
+                                            <td>SMS</td>                         <td><i class="fa fa-edit" aria-hidden="true"></i></td>
+                                          <td><i class="fas fa-phone-square" aria-hidden="true"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Roshan</td>
+                                            <td>Rogahn</td>
+                                            <td>9786784567</td>
+                                            <td>Chennai</td>
+                                            <td>BSR lands</td>
+                                            <td>Papa</td>
+                                            <td>07-06-2021</td>     
+                                            <td>SMS</td>                         <td><i class="fa fa-edit" aria-hidden="true"></i></td>
+                                          <td><i class="fas fa-phone-square" aria-hidden="true"></i></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="popup1" class="overlay">
+                    <div class="popup">
+                        <h2>Here i am</h2>
+                        <a class="close" href="#">&times;</a>
+                        <div class="content">
+                            Thank to pop me out of that button, but now i'm done so you can close this window.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Right sidebar -->
+                <!-- ============================================================== -->
+                <!-- .right-sidebar -->
+                <!-- ============================================================== -->
+                <!-- End Right sidebar -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center"> 2021 © ASV Infotechs brought to you by <a
+                    href="https://www.wrappixel.com/">wrappixel.com</a>
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.js"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="css/paging.js"></script> 
+    <script type="text/javascript">
+                $(document).ready(function() {
+                    $('#tableData').paging({limit:10});
+                });
+            </script>
+            
+</body>
+
+</html>
